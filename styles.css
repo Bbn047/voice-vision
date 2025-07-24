@@ -2,33 +2,44 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
+    background-color: rgb(31, 29, 29);
 }
 
 .background-image {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     background-image: url('./images/pic1.png');
-    background-size: cover;
-    object-fit: contain;
+    background-size: auto;
+    object-fit: none;
      background-repeat: no-repeat;
-    background-position: center;
+    background-position: top-left;
     opacity: 1;
     filter: brightness(0.2);
     z-index: -1;
 }
 
 .container {
-    position: relative;
+   position: relative;
     z-index: 1;
+    
+}
+.header-content{
+    position: relative;
+    text-align: end;
+}
+.exit{
+    width: 30px;
+    height: 30px;
+    background-color: bisque;
 }
 
 /*logo section*/
 .logo-container{
     display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: space-between;
     padding-left: 20%;
     padding-right: 20%;
