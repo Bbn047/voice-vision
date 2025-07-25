@@ -52,7 +52,14 @@ h1 {
     color: #34FF9C;
 }
 
+
+form{
+    color: white;
+}
 /*footer section*/
-.footer-content{
+.footer-content {
+
+    padding-left: 10%;
+    padding-right: 10%;
     color: white;
 }
