@@ -40,7 +40,8 @@
                         <a href="#" class="link text-decoration-none" data-bs-toggle="modal"
                             data-bs-target="#createAccountModal">Create New!</a>
 
-                        <a href="#" class="link-password text-decoration-none " data-bs-toggle="forgot" data-bs-target="#forgotPassword">Forgot Password?</a>
+                        <a href="#" class="link-password text-decoration-none" data-bs-toggle="modal"
+                            data-bs-target="#forgotPasswordModal">Forgot Password?</a>
                     </div>
                 </div>
 
@@ -58,16 +59,6 @@
                         alt="authorlogo" widt="80" height="80" class="autho"></a></li>
         </ul>
     </footer>
-
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"
-        integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK"
-        crossorigin="anonymous"></script>
-
-
 
     <!-- Create Account  -->
     <div class="modal fade" id="createAccountModal" tabindex="-1" aria-labelledby="createAccountModalLabel"
@@ -98,39 +89,37 @@
             </div>
         </div>
     </div>
-    </div>
 
-    <!-- forgot password -->
-    <div class="forgot fade" id="forgotPassword" tabindex="-1" aria-labelledby="createAccountModalLabel"
+    <!-- Forgot Password Modal -->
+    <div class="modal fade" id="forgotPasswordModal" tabindex="-1" aria-labelledby="forgotPasswordModalLabel"
         aria-hidden="true">
-        <div class="forgot-dialog forgot-dialog-centered modal-sm">
-            <div class="forgot-content bg-dark text-white">
-                <div class="forgot-header">
-                    <h5 class="forgot-title w-100 text-center" id="createAccountModalLabel">Create New Account</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="forgot"
+        <div class="modal-dialog modal-dialog-centered modal-sm">
+            <div class="modal-content bg-dark text-white">
+                <div class="modal-header">
+                    <h5 class="modal-title w-100 text-center" id="forgotPasswordModalLabel">Forgot Password</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
                         aria-label="Close"></button>
                 </div>
-                <div class="forgot-body">
+                <div class="modal-body">
                     <form>
-                        <div class="create">
-                            <label for="newEmail" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="newEmail" placeholder="example@email.com">
+                        <div class="mb-3">
+                            <label for="forgotEmail" class="form-label">Enter your email address</label>
+                            <input type="email" class="form-control" id="forgotEmail" placeholder="example@email.com">
                         </div>
-                        <div class="create">
-                            <label for="newPassword" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="newPassword" placeholder="Enter password">
-                            <label for="newPassword" class="form-label">Conform Password</label>
-                            <input type="password" class="form-control" id="newPassword"
-                                placeholder="Re-Enter password">
-                        </div>
+                        <button type="submit" class="btn btn-warning w-100">Send Reset Link</button>
+                    </form>
                 </div>
-                <button type="submit" class="btn btn-success w-100">Register</button>
-                </form>
             </div>
         </div>
     </div>
-    </div>
 
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"
+        integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
