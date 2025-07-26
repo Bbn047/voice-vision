@@ -22,7 +22,7 @@ body {
 }
 
 .container {
-    position: relative;
+    position: fixed;
     z-index: 1;
 
 }
@@ -33,10 +33,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    
 }
 
 .logo-content {
-    margin-top: 10%;
+    margin-top: 9%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -45,7 +46,9 @@ body {
     align-items: center;
     flex-direction: column;
     margin-top: 10%;
-    font-size: .9rem;
+    font-size: .8rem;
+    margin-right: 5px;
+   
 }
 
 form input{
@@ -67,12 +70,21 @@ h1 {
 form {
     color: white;
 }
+.account {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    font-size: .8rem;
+}
 
-
+.account .link {
+    color: #34FF9C;
+    text-decoration: none;
+}
 /*footer section*/
 .footer-content {
     display: flex;
     flex-direction: column-reverse;
     color: white;
-    margin-right: 50%;
+    margin-left: 50%;
 }
