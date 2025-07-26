@@ -40,7 +40,7 @@
                         <a href="#" class="link text-decoration-none" data-bs-toggle="modal"
                             data-bs-target="#createAccountModal">Create New!</a>
 
-                        <a href="#" class="link-password text-decoration-none ">Forgot Password?</a>
+                        <a href="#" class="link-password text-decoration-none " data-bs-toggle="forgot" data-bs-target="#forgotPassword">Forgot Password?</a>
                     </div>
                 </div>
 
@@ -69,10 +69,10 @@
 
 
 
-    <!-- Create Account Model -->
+    <!-- Create Account  -->
     <div class="modal fade" id="createAccountModal" tabindex="-1" aria-labelledby="createAccountModalLabel"
         aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-dialog modal-dialog-centered modal-sm">
             <div class="modal-content bg-dark text-white">
                 <div class="modal-header">
                     <h5 class="modal-title w-100 text-center" id="createAccountModalLabel">Create New Account</h5>
@@ -81,16 +81,47 @@
                 </div>
                 <div class="modal-body">
                     <form>
-                        <div class="mb-3">
+                        <div class="create">
                             <label for="newEmail" class="form-label">Email address</label>
                             <input type="email" class="form-control" id="newEmail" placeholder="example@email.com">
                         </div>
-                        <div class="mb-3">
+                        <div class="create">
                             <label for="newPassword" class="form-label">Password</label>
                             <input type="password" class="form-control" id="newPassword" placeholder="Enter password">
                             <label for="newPassword" class="form-label">Conform Password</label>
                             <input type="password" class="form-control" id="newPassword"
-                                placeholder="RE-Enter password">
+                                placeholder="Re-Enter password">
+                        </div>
+                </div>
+                <button type="submit" class="btn btn-success w-100">Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- forgot password -->
+    <div class="forgot fade" id="forgotPassword" tabindex="-1" aria-labelledby="createAccountModalLabel"
+        aria-hidden="true">
+        <div class="forgot-dialog forgot-dialog-centered modal-sm">
+            <div class="forgot-content bg-dark text-white">
+                <div class="forgot-header">
+                    <h5 class="forgot-title w-100 text-center" id="createAccountModalLabel">Create New Account</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="forgot"
+                        aria-label="Close"></button>
+                </div>
+                <div class="forgot-body">
+                    <form>
+                        <div class="create">
+                            <label for="newEmail" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="newEmail" placeholder="example@email.com">
+                        </div>
+                        <div class="create">
+                            <label for="newPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="newPassword" placeholder="Enter password">
+                            <label for="newPassword" class="form-label">Conform Password</label>
+                            <input type="password" class="form-control" id="newPassword"
+                                placeholder="Re-Enter password">
                         </div>
                 </div>
                 <button type="submit" class="btn btn-success w-100">Register</button>
@@ -102,4 +133,4 @@
 
 </body>
 
-</html><a
+</html>
