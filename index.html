@@ -36,8 +36,10 @@
                         <label class="form-check-label" for="exampleCheck1">Remember Me</label>
                     </div>
                     <button type="submit" class="btn btn-primary">Sign in</button>
-                    <div class="account d-flex justify-content-between">
-                        <a href="#" class="link text-decoration-none ">Create New!</a>
+                    <div class="create-account d-flex justify-content-between">
+                        <a href="#" class="link text-decoration-none" data-bs-toggle="modal"
+                            data-bs-target="#createAccountModal">Create New!</a>
+
                         <a href="#" class="link-password text-decoration-none ">Forgot Password?</a>
                     </div>
                 </div>
@@ -47,7 +49,7 @@
     </div>
 
     <!--footer setion-->
-    <footer class="footer-content d-flex flex-wrap justify-content-between align-items-center py-2 my-5">
+    <footer class="footer-content d-flex flex-wrap justify-content-between align-items-center py-1 my-5">
         <div class=" d-flex align-items-center">
             </a> <span class=" text-white">@ ciyagozz</span>
         </div>
@@ -64,6 +66,39 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"
         integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK"
         crossorigin="anonymous"></script>
+
+
+
+    <!-- Create Account Model -->
+    <div class="modal fade" id="createAccountModal" tabindex="-1" aria-labelledby="createAccountModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-dark text-white">
+                <div class="modal-header">
+                    <h5 class="modal-title w-100 text-center" id="createAccountModalLabel">Create New Account</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="newEmail" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="newEmail" placeholder="example@email.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="newPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="newPassword" placeholder="Enter password">
+                            <label for="newPassword" class="form-label">Conform Password</label>
+                            <input type="password" class="form-control" id="newPassword"
+                                placeholder="RE-Enter password">
+                        </div>
+                </div>
+                <button type="submit" class="btn btn-success w-100">Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
 
 </body>
 
