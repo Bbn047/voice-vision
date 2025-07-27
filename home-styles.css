@@ -2,9 +2,12 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
-     overflow: hidden;
+    overflow: hidden;
     background-color: rgb(31, 29, 29);
+    font-family: 'Karla', sans-serif;
+    letter-spacing: 1px;
 }
+
 /* background section */
 .background-image {
     position: fixed;
@@ -37,33 +40,37 @@ body {
     align-items: center;
     flex-direction: column;
 }
+
 .logo {
     width: 100px;
     height: 100px;
 }
 
-h1 {
+.logo-name {
+    padding-top: 20px;
+    font-family: 'Leckerli One', cursive;
+     letter-spacing: 7px;
     color: #34FF9C;
 }
 
 /*sign in section */
-.form-signin{
+.form-signin {
     align-items: center;
     flex-direction: column;
     margin-top: 10%;
     font-size: .8rem;
-    margin-right: 5px;   
+    margin-right: 5px;
 }
 
-form input{
+.user-input input {
     display: flex;
     margin-bottom: 10%;
-    margin-right: 2%;
 }
 
-form {
+.user-input {
     color: white;
 }
+
 .create-account {
     display: flex;
     justify-content: space-between;
@@ -84,8 +91,19 @@ form {
     color: white;
     margin-left: 50%;
 }
+.footer-content span{
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 5px;
+}
 
 /* account creation */
-.modal-header{
+.modal-header {
     border-bottom: none;
+}
+.modal-body .create{
+    font-size: 15px;
+}
+.create input {
+    display: flex;
+    margin-bottom: 7%;
 }
