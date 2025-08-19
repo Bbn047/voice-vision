@@ -3,23 +3,24 @@ body {
     padding: 0;
     height: 100%;
     overflow: hidden;
-     background-color: rgb(31, 29, 29);
+    background-color: rgb(31, 29, 29);
     font-family: 'Karla', sans-serif;
     letter-spacing: 1px;
 }
 
 
-.navbar_container{
-   
-    
+.custom-navbar {
+    background-color: rgb(255, 255, 255);
 }
-.navbar{
+
+.navbar {
     font-family: 'Karla', sans-serif;
 }
+
 .navbar-brand {
     font-style: italic;
-    font-weight: bold;
-     font-family: 'Leckerli One', cursive;
-     color: #34FF9C;
-     letter-spacing: 5px;
+    font-size: 25px;
+    font-family: 'Leckerli One', cursive;
+    color: #34FF9C;
+    letter-spacing: 5px;
 }
