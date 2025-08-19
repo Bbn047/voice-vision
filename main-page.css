@@ -9,6 +9,17 @@ body {
 }
 
 
+.navbar_container{
+   
+    
+}
 .navbar{
     font-family: 'Karla', sans-serif;
+}
+.navbar-brand {
+    font-style: italic;
+    font-weight: bold;
+     font-family: 'Leckerli One', cursive;
+     color: #34FF9C;
+     letter-spacing: 5px;
 }
