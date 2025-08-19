@@ -35,7 +35,6 @@ body {
 }
 
 .logo-content {
-    margin-top: 8%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -89,11 +88,14 @@ body {
     display: flex;
     flex-direction: column-reverse;
     color: white;
-    margin-left: 50%;
+    margin-right: 50%;
+    margin-top: auto;
 }
 .footer-content span{
     font-family: 'Inter', sans-serif;
     letter-spacing: 5px;
+    font-size: small;
+    color: #34FF9C;
 }
 
 /* account creation */
