@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+     background-color: rgb(31, 29, 29);
+    font-family: 'Karla', sans-serif;
+    letter-spacing: 1px;
+}
+
+
+.navbar{
+    font-family: 'Karla', sans-serif;
+}
