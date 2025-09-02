@@ -54,6 +54,9 @@ body {
     text-decoration: none;
     /* ensures no underline on hover */
 }
+.profile-color {
+  color: #34FF9C;  /* set your desired color */
+}
 
 .profile_icon {
     border: solid #34FF9C;
