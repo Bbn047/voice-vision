@@ -2,20 +2,25 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
-     overflow: hidden;
+    overflow: hidden;
     background-color: rgb(31, 29, 29);
     font-family: 'Karla', sans-serif;
     letter-spacing: 1px;
 }
-.background{
-   position: fixed;       /* stay behind content */
+
+.background {
+    position: fixed;
+    /* stay behind content */
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgb(52, 255, 157); /* adjust color & opacity */
-    filter: brightness(20%);  /* adjust brightness */
-    z-index: 0;            /* behind content */
+    background-color: rgb(52, 255, 157);
+    /* adjust color & opacity */
+    filter: brightness(20%);
+    /* adjust brightness */
+    z-index: 0;
+    /* behind content */
 }
 
 .content {
@@ -40,23 +45,34 @@ body {
 }
 
 .navbar-brand:hover {
-    color: #34FF9C;          /* prevents color change on hover */
-    text-decoration: none;    /* ensures no underline on hover */
+    color: #34FF9C;
+    /* prevents color change on hover */
+    text-decoration: none;
+    /* ensures no underline on hover */
 }
 
-.profile_icon{
-    border: solid  #34FF9C;
+.profile_icon {
+    border: solid #34FF9C;
     border-radius: 50%;
     border-width: 2px;
 }
 
+/* voice device section */
+.device{
+    background-color: #34FF9C;
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
 /* google map section */
 
-.google-map{
+.google-map {
     margin: 30px;
-    
+
 }
-.map-frame{
+
+.map-frame {
     border-radius: 20px;
-     box-shadow: 1px 4px 12px rgba(0, 0, 0, 0.671); 
+    box-shadow: 1px 4px 12px rgba(0, 0, 0, 0.671);
 }
