@@ -45,7 +45,18 @@ body {
 }
 
 .profile_icon{
-    border: solid black;
+    border: solid  #34FF9C;
     border-radius: 50%;
     border-width: 2px;
+}
+
+/* google map section */
+
+.google-map{
+    margin: 30px;
+    
+}
+.map-frame{
+    border-radius: 20px;
+     box-shadow: 1px 4px 12px rgba(0, 0, 0, 0.671); 
 }
