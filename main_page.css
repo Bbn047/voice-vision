@@ -27,9 +27,12 @@ body {
     position: relative;
     z-index: 1;
 }
+.custom-navbar .nav-link {
+    color: white !important;       /* !important overrides Bootstrap default */
+}
 
 .custom-navbar {
-    background-color: rgb(250, 243, 243);
+    background-color: rgb(36, 35, 35);
 }
 
 .navbar {
@@ -57,13 +60,28 @@ body {
     border-width: 2px;
 }
 
+.quote{
+    background-color: rgb(47, 49, 49);
+    height: 30px;
+    font-size: small;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+/*map and device align 
+.section_1{
+    display: flex;
+    flex-direction: row;
+}
 /* voice device section */
 .device{
-    background-color: #34FF9C;
+    background-color: #34ff9dda;
     width: 95%;
     height: 30vh;
     margin: 0 auto;
     margin-top: 20px;
+    margin-left: 20px;
     border-radius: 20px;
     display: flex;           /* enables flex layout */
     align-items: center;     /* vertical center */
@@ -75,7 +93,7 @@ body {
       width: 150px;
       height: 150px;
       border-radius: 50%;
-      background: conic-gradient(#4CAF50 0deg, #e6e6e6 0deg);
+      background: conic-gradient(#0fc067bd 90deg, #e6e6e6 90deg);
       display: flex;
       justify-content: center;
       align-items: center;
@@ -98,7 +116,7 @@ body {
 /* google map section */
 
 .google-map {
-    margin: 30px;
+    margin: 20px;
 
 }
 
