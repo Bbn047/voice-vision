@@ -26,8 +26,10 @@ body {
     position: relative;
     z-index: 1;
 }
+
 .custom-navbar .nav-link {
-    color: white !important;       /* !important overrides Bootstrap default */
+    color: white !important;
+    /* !important overrides Bootstrap default */
 }
 
 .custom-navbar {
@@ -59,57 +61,66 @@ body {
     border-width: 2px;
 }
 
-.quote{
+.quote-container {
+    height: 30px; /* adjust height as needed */
+    display: flex;
     background-color: rgb(47, 49, 49);
     height: 30px;
     font-size: small;
-    margin: 0 auto;
+     justify-content: center; 
     align-items: center;
     text-align: center;
+}
+
+.quote {
     color: white;
 }
+
 /*map and device align 
 .section_1{
     display: flex;
     flex-direction: row;
 }
 /* voice device section */
-.device{
+.device {
     background-color: #34ff9dda;
     width: 97%;
     height: 30vh;
     margin: 0 auto;
     margin-top: 20px;
     border-radius: 20px;
-    display: flex;           /* enables flex layout */
-    align-items: center;     /* vertical center */
-    justify-content: flex-start; /* align to left */
-    padding-left: 20px; 
+    display: flex;
+    /* enables flex layout */
+    align-items: center;
+    /* vertical center */
+    justify-content: flex-start;
+    /* align to left */
+    padding-left: 20px;
 }
 
-  .circle-wrap {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      background: conic-gradient(#0fc067bd 90deg, #e6e6e6 90deg);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 20px;
-      font-weight: bold;
-      font-size: 24px;
-      color: #333;
-    }
+.circle-wrap {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: conic-gradient(#0fc067bd 90deg, #e6e6e6 90deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    font-weight: bold;
+    font-size: 24px;
+    color: #333;
+}
 
-    .inside-circle {
-      width: 130px;
-      height: 130px;
-      border-radius: 50%;
-      background: white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+.inside-circle {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /* google map section */
 
