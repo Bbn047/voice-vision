@@ -22,7 +22,7 @@
 
                     <!--company logo and name-->
 
-                    <a class="navbar-brand d-flex align-items-center " href="#">
+                    <a class="navbar-brand d-flex align-items-center ms-3 " href="#">
                         <img class="brand me-3" src="/images/app logo.png" alt="Logo" width="50" height="45">
                         <span>Voice - Vision</span>
                     </a>
@@ -60,23 +60,26 @@
             </nav>
         </div>
 
-        <!--voice device section-->
-        <div class="device">
+        <div class="quote"> moves faster as normal with no fear no struggle </div>
 
-            <div class="circle-wrap" id="circle">
-                <div class="inside-circle" id="battery-text">0%</div>
+        <div class="section_1">
+            <!--voice device section-->
+            <div class="device">
+                <div class="circle-wrap" id="circle">
+                    <div class="inside-circle" id="battery-text">0%</div>
+                </div>
+                <div> Device name</div>
 
             </div>
-        </div>
 
-
-        <!--body content -->
-        <div class="mapsection">
-            <div class="google-map">
-                <iframe class="map-frame"
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d19558.236547406977!2d20.97525213068849!3d52.21105318642457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2spl!4v1756830838977!5m2!1sen!2spl"
-                    width="600" height="400" style="border:2;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <!--body content -->
+            <div class="mapsection">
+                <div class="google-map">
+                    <iframe class="map-frame"
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d19558.236547406977!2d20.97525213068849!3d52.21105318642457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2spl!4v1756830838977!5m2!1sen!2spl"
+                        width="600" height="400" style="border:2;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
         </div>
     </div>
@@ -91,28 +94,28 @@
         crossorigin="anonymous"></script>
 
     <script>
-    function setBatteryLevel(percent) {
-      const circle = document.getElementById("circle");
-      const text = document.getElementById("battery-text");
+        function setBatteryLevel(percent) {
+            const circle = document.getElementById("circle");
+            const text = document.getElementById("battery-text");
 
-      // Calculate degrees for conic-gradient
-      const degrees = (percent / 100) * 360;
+            // Calculate degrees for conic-gradient
+            const degrees = (percent / 100) * 360;
 
-      circle.style.background = `conic-gradient(#4CAF50 ${degrees}deg, #e6e6e6 ${degrees}deg)`;
-      text.innerText = percent + "%";
-    }
+            circle.style.background = `conic-gradient(#0fc067bd ${degrees}deg, #e6e6e6 ${degrees}deg)`;
+            text.innerText = percent + "%";
+        }
 
-    // Example usage:
-    let battery = 25;
-    setBatteryLevel(battery);
+        // Example usage:
+        let battery = 65;
+        setBatteryLevel(battery);
 
-    // Optional: animate battery percentage
-   /* setInterval(() => {
-      battery += 1;
-      if (battery > 100) battery = 0;
-      setBatteryLevel(battery);
-    }, 100); */
-  </script>
+        // Optional: animate battery percentage
+        /* setInterval(() => {
+           battery += 1;
+           if (battery > 100) battery = 0;
+           setBatteryLevel(battery);
+         }, 100); */
+    </script>
 </body>
 
 </html>
