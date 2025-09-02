@@ -24,16 +24,38 @@ body {
 
 .content {
     position: relative;
+    padding-top: 80px;
     z-index: 1;
 }
 
 .custom-navbar .nav-link {
     color: white !important;
+
     /* !important overrides Bootstrap default */
 }
 
+.color {
+    background-color: rgb(52, 255, 157);
+    filter: brightness(20%);
+
+}
+
 .custom-navbar {
-    background-color: rgb(36, 35, 35);
+    color: white;
+    border-bottom: 1px solid white;
+    z-index: 10;
+}
+.custom-navbar::before {
+   content: "";  /* required for pseudo-element */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(52, 255, 157);
+    filter: brightness(20%);
+    z-index: -1;  /* push behind navbar content */
+    border-bottom: 1px solid white; /* optional, keeps border look */
 }
 
 .navbar {
@@ -54,8 +76,10 @@ body {
     text-decoration: none;
     /* ensures no underline on hover */
 }
+
 .profile-color {
-  color: #34FF9C;  /* set your desired color */
+    color: #34FF9C;
+    /* set your desired color */
 }
 
 .profile_icon {
@@ -65,12 +89,11 @@ body {
 }
 
 .quote-container {
-    height: 30px; /* adjust height as needed */
+    height: 30px;
     display: flex;
     background-color: rgb(47, 49, 49);
-    height: 30px;
     font-size: small;
-     justify-content: center; 
+    justify-content: center;
     align-items: center;
     text-align: center;
 }
@@ -128,5 +151,25 @@ body {
 
 .map-frame {
     border-radius: 20px;
+    width: 25%;
     box-shadow: 1px 4px 12px rgba(0, 0, 0, 0.671);
+}
+
+/*footer section */
+footer {
+    width: 97%;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: flex;
+    /* enables flex layout */
+    align-items: center;
+    /* vertical center */
+    justify-content: flex-start;
+    /* align to left */
+    padding-left: 20px;
+}
+
+.footer-logo {
+    width: 30px;
+    height: 30px;
 }
