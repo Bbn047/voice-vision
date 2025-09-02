@@ -65,7 +65,6 @@ body {
     margin: 0 auto;
     margin-top: 20px;
     border-radius: 20px;
-
     display: flex;           /* enables flex layout */
     align-items: center;     /* vertical center */
     justify-content: flex-start; /* align to left */
