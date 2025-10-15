@@ -1,175 +1,295 @@
 body {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    background-color: rgb(31, 29, 29);
-    font-family: 'Karla', sans-serif;
-    letter-spacing: 1px;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: 'Karla', sans-serif;
+  letter-spacing: 1px;
 }
 
+:root{
+--primary-color: #3E5F44;
+--secondary-color: #5E936C;
+--box-color: #93DA97;
+--background-color: #E8FFD7;
+--text-color: #ffffff;
+}
+
+
 .background {
-    position: fixed;
-    /* stay behind content */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(52, 255, 157);
-    /* adjust color & opacity */
-    filter: brightness(20%);
-    /* adjust brightness */
-    z-index: 0;
-    /* behind content */
+  position: fixed;
+  /* stay behind content */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color:var(--background-color);
+  /* adjust color & opacity */
+  /*filter: brightness(100%); */
+  /* adjust brightness */
+  z-index: 0;
+  /* behind content */
 }
 
 .content {
-    position: relative;
-    padding-top: 80px;
-    z-index: 1;
+  position: relative;
+  padding-top: 80px;
+  z-index: 1;
+  width: 97%;
+  margin-left: 20px;
 }
 
 .custom-navbar .nav-link {
-    color: white !important;
+  color: var(--text-color) !important;
 
-    /* !important overrides Bootstrap default */
+  /* !important overrides Bootstrap default */
 }
 
 .color {
-    background-color: rgb(52, 255, 157);
-    filter: brightness(20%);
+  background-color: #93DA97;
+  filter: brightness(20%);
 
 }
 
 .custom-navbar {
-    color: white;
-    border-bottom: 1px solid white;
-    z-index: 10;
+  color: white;
+  border-bottom: 1px solid white;
+  z-index: 10;
 }
+
 .custom-navbar::before {
-   content: "";  /* required for pseudo-element */
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgb(52, 255, 157);
-    filter: brightness(20%);
-    z-index: -1;  /* push behind navbar content */
-    border-bottom: 1px solid white; /* optional, keeps border look */
+  content: "";
+  /* required for pseudo-element */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(52, 255, 157);
+  filter: brightness(30%);
+  z-index: -1;
+  /* push behind navbar content */
+  border-bottom: 1px solid white;
+  /* optional, keeps border look */
 }
 
 .navbar {
-    font-family: 'Karla', sans-serif;
+  font-family: 'Karla', sans-serif;
 }
 
 .navbar-brand {
-    font-style: italic;
-    font-size: 25px;
-    font-family: 'Leckerli One', cursive;
-    color: #34FF9C;
-    letter-spacing: 5px;
+  font-style: italic;
+  font-size: 25px;
+  font-family: 'Leckerli One', cursive;
+  color: #f7faf8;
+  letter-spacing: 5px;
 }
 
 .navbar-brand:hover {
-    color: #34FF9C;
-    /* prevents color change on hover */
-    text-decoration: none;
-    /* ensures no underline on hover */
+  color: #34FF9C;
+  /* prevents color change on hover */
+  text-decoration: none;
+  /* ensures no underline on hover */
 }
 
 .profile-color {
-    color: #34FF9C;
-    /* set your desired color */
+  color: #34FF9C;
+  /* set your desired color */
 }
 
 .profile_icon {
-    border: solid #34FF9C;
-    border-radius: 50%;
-    border-width: 2px;
+  border: solid #34FF9C;
+  border-radius: 50%;
+  border-width: 2px;
 }
 
 .quote-container {
-    height: 30px;
-    display: flex;
-    background-color: rgb(47, 49, 49);
-    font-size: small;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  height: 30px;
+  display: flex;
+  background-color: rgb(47, 49, 49);
+  font-size: small;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .quote {
-    color: white;
+  color: white;
 }
 
 .device {
-    background-color: #34ff9dda;
-    width: 97%;
-    height: 30vh;
-    margin: 0 auto;
-    margin-top: 30px;
-    border-radius: 20px;
-    display: flex;
-    /* enables flex layout */
-    align-items: center;
-    /* vertical center */
-    justify-content: flex-start;
-    /* align to left */
-    padding-left: 20px;
+  background-color: #34ff9dda;
+
+  height: 30vh;
+  margin: 0 auto;
+  margin-top: 30px;
+  border-radius: 20px;
+  display: flex;
+  /* enables flex layout */
+  align-items: center;
+  /* vertical center */
+  justify-content: flex-start;
+  /* align to left */
+  padding-left: 20px;
 }
 
 .circle-wrap {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    background: conic-gradient(#0fc067bd 90deg, #e6e6e6 90deg);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
-    font-weight: bold;
-    font-size: 24px;
-    color: #333;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: conic-gradient(#0fc067bd 90deg, #e6e6e6 90deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  font-weight: bold;
+  font-size: 24px;
+  color: #333;
 }
 
 .inside-circle {
-    width: 130px;
-    height: 130px;
-    border-radius: 50%;
-    background: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* google map section */
+/*center section  */
+.center {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  margin-top: 30px;
+  gap: 20px;
+}
 
-.google-map {
-    margin: 20px;
-    margin-top: 30px;
+.settings-container {
+  display: flex;
+  margin-top: 20px;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.language-box {
+  position: relative;
+  border: 2px solid #00b377;
+  border-radius: 15px;
+  padding: 15px 25px;
+  width: 220px;
+}
+
+.languages {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.lang-option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Add button */
+.add-btn {
+  position: absolute;
+  right: -12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #003e2e;
+  border: 2px solid #00b377;
+  color: #00b377;
+  font-size: 18px;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+/* Toggle switch design */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.3s;
+  border-radius: 20px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+input:checked+.slider {
+  background-color: #00b377;
+}
+
+input:checked+.slider:before {
+  transform: translateX(20px);
+}
+
+.toggle-row {
+  background: white;
+  color: #333;
+  border-radius: 25px;
+  padding: 5px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 220px;
+}
+
+.connected-people {
+  width: auto;
+  background-color: rgba(14, 189, 130, 0.356);
+  filter: brightness(90%);
+  border-radius: 20px;
+}
+
+
+/* google map section */
+.mapsection {
+  width: 50%;
 }
 
 .map-frame {
-    border-radius: 20px;
-    width: 25%;
-    box-shadow: 1px 4px 12px rgba(0, 0, 0, 0.671);
+  border-radius: 20px;
+  box-shadow: 1px 4px 12px rgba(0, 0, 0, 0.671);
 }
 
 /*footer section */
 footer {
-    width: 97%;
-    margin: 0 auto;
-    margin-top: 30px;
-    display: flex;
-    /* enables flex layout */
-    align-items: center;
-    /* vertical center */
-    justify-content: flex-start;
-    /* align to left */
-    padding-left: 20px;
+  margin-top: 30px;
+  display: flex;
 }
 
 .footer-logo {
-    width: 30px;
-    height: 30px;
+  width: 30px;
+  height: 30px;
 }
